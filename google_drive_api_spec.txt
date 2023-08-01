@@ -1,0 +1,44 @@
+Program Specification: Google Drive API Toolkit
+
+Program Purpose:
+The Google Drive API Toolkit is designed to interact with Google Drive through its API, enabling users to create, retrieve, update, and delete files. The toolkit will be built according to the Google API's GitHub page guidelines.
+
+Functionality:
+
+1. Authentication: Authenticate the user with Google Drive using OAuth 2.0. This will allow the toolkit to access and manage the user's Google Drive files.
+
+2. File Management: Provide functions to create, retrieve, update, and delete files on Google Drive. 
+
+3. Folder Management: Provide functions to create, retrieve, update, and delete folders on Google Drive.
+
+4. File Upload and Download: Provide functions to upload files to Google Drive and download files from Google Drive.
+
+5. Search: Provide a function to search for files and folders on Google Drive.
+
+Core Classes, Functions, Methods:
+
+1. Class GoogleDriveAPI:
+   - authenticate(): Authenticate with Google Drive using OAuth 2.0.
+   - create_file(): Create a file on Google Drive.
+   - retrieve_file(): Retrieve a file from Google Drive.
+   - update_file(): Update a file on Google Drive.
+   - delete_file(): Delete a file from Google Drive.
+   - create_folder(): Create a folder on Google Drive.
+   - retrieve_folder(): Retrieve a folder from Google Drive.
+   - update_folder(): Update a folder on Google Drive.
+   - delete_folder(): Delete a folder from Google Drive.
+   - upload_file(): Upload a file to Google Drive.
+   - download_file(): Download a file from Google Drive.
+   - search(): Search for files and folders on Google Drive.
+
+Non-Standard Dependencies:
+
+1. google-auth: Google Authentication Library to authenticate with Google Drive.
+2. google-auth-httplib2: HTTP client library for use with google-auth.
+3. google-auth-oauthlib: OAuth library for use with google-auth.
+4. google-api-python-client: Google API client library to interact with Google APIs.
+5. google-auth-oauthlib: OAuth library for use with google-auth.
+
+Usage:
+
+The Google Drive API Toolkit can be used in Python programs to interact with Google Drive. After importing the GoogleDriveAPI class, an instance of the class can be created. The authenticate() method can be called to authenticate with Google Drive. After authentication, the other methods can be used to interact with Google Drive. For example, the create_file() method can be used to create a file, the retrieve_file() method can be used to retrieve a file, and so on.

@@ -1,0 +1,43 @@
+Specification for Google Drive API Toolkit Code
+
+1. Program Description:
+
+The program is a Google Drive API toolkit that allows users to interact with their Google Drive files and folders. It provides functionalities such as creating, reading, updating, and deleting files and folders, sharing files and folders with other users, and moving files and folders to different locations in the drive. 
+
+2. Core Classes and Functions:
+
+   a. GoogleDriveAPI: This is the main class that handles the communication with the Google Drive API. It contains all the methods needed to interact with the Google Drive.
+
+   b. authenticate(): This method authenticates the user with the Google Drive API. It takes no parameters and returns an authenticated Google Drive service.
+
+   c. list_files(): This method lists all the files in the user's Google Drive. It takes no parameters and returns a list of file objects.
+
+   d. get_file(): This method retrieves a file from the user's Google Drive. It takes the file ID as a parameter and returns the file object.
+
+   e. create_file(): This method creates a new file in the user's Google Drive. It takes the file name and file content as parameters and returns the created file object.
+
+   f. update_file(): This method updates a file in the user's Google Drive. It takes the file ID, new file name, and new file content as parameters and returns the updated file object.
+
+   g. delete_file(): This method deletes a file from the user's Google Drive. It takes the file ID as a parameter and returns nothing.
+
+   h. share_file(): This method shares a file with another user. It takes the file ID and the email of the user to share with as parameters and returns nothing.
+
+   i. move_file(): This method moves a file to a different location in the user's Google Drive. It takes the file ID and the folder ID of the new location as parameters and returns nothing.
+
+3. Non-Standard Dependencies:
+
+   a. google-auth-oauthlib: This library is used for user authentication with the Google Drive API.
+
+   b. google-auth-httplib2: This library is used to make HTTP requests to the Google Drive API.
+
+   c. google-api-python-client: This library is used to interact with the Google Drive API.
+
+   d. google-auth: This library is used for authentication with Google APIs.
+
+   e. google-auth-httplib2: This library is used for making authenticated HTTP requests.
+
+   f. google-auth-oauthlib: This library is used for OAuth 2.0 client and server flow support.
+
+   g. google-auth-storage: This library is used for storing and retrieving user credentials. 
+
+Note: All the dependencies are part of the Google Client Library for Python.
